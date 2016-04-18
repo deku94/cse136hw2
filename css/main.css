@@ -160,3 +160,8 @@ input[type=email], input[type=password]{
 .login:hover {
     background-color: #45a049;
 }
+
+/*ADDED TO STOP SCROLLING TO TOP*/
+#close {
+  display: none;
+}

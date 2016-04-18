@@ -50,6 +50,16 @@ p {
   min-width: 20px;
   margin-left:10px;
 }
+.btn.btn-bigEdit {
+  font-size: 10px;
+  padding: 5px 5px;
+  min-width: 20px;
+}
+.btn.btn-bigDelete {
+  font-size: 10px;
+  padding: 5px 5px;
+  min-width: 20px;
+}
 .btn-close {
   color: #aaa;
   font-size: 30px;
@@ -57,6 +67,21 @@ p {
   position: absolute;
   right: 5px;
   top: 0;
+}
+.btn2-close {
+  background: #428bca;
+  border: #357ebd solid 1px;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 15px;
+  text-decoration: none;
+  text-align: center;
+  min-width: 60px;
+  position: relative;
+  transition: color .1s ease;
+  /* top: 40em;*/
 }
 .btn-close:hover {
   color: #919191;
@@ -101,7 +126,7 @@ p {
 }
 .modal-body {
   padding: 20px;
-  position:relative;
+  position:absolute;
 }
 .modal-header,
 .modal-footer {

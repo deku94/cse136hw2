@@ -4,7 +4,7 @@
 <head>
 <title>Bookmarx</title>
 <link rel="stylesheet" type="text/css" href="css/pure-grid.css">
-<!--<link rel="stylesheet" type="text/css" href="css/main.css">-->
+<link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/modal.css" />
 <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -15,7 +15,7 @@
     <div class="pure-u-1"><p class="bookmarx">BookMarx</p></div>
         <div class="pure-u-1-4">
         <i class = "fa fa-star fa-2x">
-            <a href="#modal-add" class="btn btn-bigAdd">
+            <a href="#modal-add" class="btn btn-bigAdd" id="add">
                 <img src="img/add.png" style="width:30px;height:30px;">
             </a>
         </i>
@@ -45,12 +45,12 @@
     <div class="pure-u-1-4">
         <div class="l-box"> 
             <i class = "fa fa-star fa-2x">
-                <a href="#modal-edit" class="btn btn-big">
+                <a href="#modal-edit" class="btn btn-bigEdit">
                     <img src="img/Edit.png" style="width:24px;height:24px;">
                 </a>
             </i>
             <i class = "fa fa-edit fa-2x">
-                <a href="#modal-delete" class="btn btn-big">
+                <a href="#modal-delete" class="btn btn-bigDelete">
                     <img src="img/trash.png" style="width:24px;height:24px;">
                 </a>
             </i>  
@@ -70,12 +70,12 @@
     <div class="pure-u-1-4">
         <div class="l-box"> 
             <i class = "fa fa-star fa-2x">
-                <a href="#modal-edit" class="btn btn-big">
+                <a href="#modal-edit" class="btn btn-bigEdit">
                     <img src="img/Edit.png" style="width:24px;height:24px;">
                 </a>
             </i>
             <i class = "fa fa-edit fa-2x">
-                <a href="#modal-delete" class="btn btn-big">
+                <a href="#modal-delete" class="btn btn-bigDelete">
                     <img src="img/trash.png" style="width:24px;height:24px;">
                 </a>
             </i>  
@@ -96,12 +96,12 @@
     <div class="pure-u-1-4">
         <div class="l-box"> 
             <i class = "fa fa-star fa-2x">
-                <a href="#modal-edit" class="btn btn-big">
+                <a href="#modal-edit" class="btn btn-bigEdit">
                     <img src="img/Edit.png" style="width:24px;height:24px;">
                 </a>
             </i>
             <i class = "fa fa-edit fa-2x">
-                <a href="#modal-delete" class="btn btn-big">
+                <a href="#modal-delete" class="btn btn-bigDelete">
                     <img src="img/trash.png" style="width:24px;height:24px;">
                 </a>
             </i>  
@@ -123,12 +123,12 @@
     <div class="pure-u-1-4">
         <div class="l-box"> 
             <i class = "fa fa-star fa-2x">
-                <a href="#modal-edit" class="btn btn-big">
+                <a href="#modal-edit" class="btn btn-bigEdit">
                     <img src="img/Edit.png" style="width:24px;height:24px;">
                 </a>
             </i>
             <i class = "fa fa-edit fa-2x">
-                <a href="#modal-delete" class="btn btn-big">
+                <a href="#modal-delete" class="btn btn-bigDelete">
                     <img src="img/trash.png" style="width:24px;height:24px;">
                 </a>
             </i>  
@@ -141,13 +141,13 @@
   <div class="modal-dialog">
     <div class="modal-header">
       <h2>Add a Bookmark!</h2>
-      <a href="#close" class="btn-close" aria-hidden="true">X</a> <!--CHANGED TO "#close"-->
+      <a href="" class="btn-close" aria-hidden="true">X</a> <!--CHANGED TO "#close"-->
     </div>
     <div class="modal-body">
       <p>Enter the URL</p>
     </div>
     <div class="modal-footer">
-      <a href="#close" class="btn">Done</a>  <!--CHANGED TO "#close"-->
+      <a href="" class="btn2-close">Done</a>  <!--CHANGED TO "#close"-->
     </div>
     </div>
   </div>
@@ -159,13 +159,13 @@
   <div class="modal-dialog">
     <div class="modal-header">
       <h2>Edit this Bookmark</h2>
-      <a href="#close" class="btn-close" aria-hidden="true">X</a> <!--CHANGED TO "#close"-->
+      <a href="" class="btn-close" aria-hidden="true">X</a> <!--CHANGED TO "#close"-->
     </div>
     <div class="modal-body">
       <p>New Title?</p>
     </div>
     <div class="modal-footer">
-      <a href="#close" class="btn">Done</a>  <!--CHANGED TO "#close"-->
+      <a href="" class="btn2-close">Done</a>  <!--CHANGED TO "#close"-->
     </div>
     </div>
   </div>
@@ -177,18 +177,90 @@
   <div class="modal-dialog">
     <div class="modal-header">
       <h2>Delete this Bookmark</h2>
-      <a href="#close" class="btn-close" aria-hidden="true">X</a> <!--CHANGED TO "#close"-->
+      <a href="" class="btn-close" aria-hidden="true">X</a> <!--CHANGED TO "#close"-->
     </div>
     <div class="modal-body">
       <p>Are you sure?</p>
     </div>
     <div class="modal-footer">
-      <a href="#close" class="btn">Okay!</a>  <!--CHANGED TO "#close"-->
+      <a href="" class="btn2-close">Okay!</a>  <!--CHANGED TO "#close"-->
     </div>
     </div>
   </div>
 </div>
 <!-- /Modal DELETE -->
+
+
+<script>
+// Add button javascript
+document.getElementById("add").onclick = function() {
+    document.getElementById('modal-add').style.display = "block";
+}
+document.getElementsByClassName("btn-close")[0].onclick = function() {
+    document.getElementById('modal-add').style.display = "none";
+}
+document.getElementsByClassName("btn2-close")[0].onclick = function() {
+    document.getElementById('modal-add').style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == document.getElementById('myModal')) {
+        document.getElementById('myModal').style.display = "none";
+    }
+}
+</script>
+
+<script>
+// Edit button javascript
+var edit_btns = document.getElementsByClassName("btn btn-bigEdit").length;
+// Since there are multiple edit buttons..
+for(var i = 0; i < edit_btns; i++) {
+    document.getElementsByClassName("btn btn-bigEdit")[i].onclick = function() {
+        document.getElementById('modal-edit').style.display = "block";
+    }    
+}
+//document.getElementsByClassName("btn btn-bigEdit")[0].onclick = function() {
+//    document.getElementById('modal-edit').style.display = "block";
+//}
+document.getElementsByClassName("btn-close")[0].onclick = function() {
+    document.getElementById('modal-edit').style.display = "none";
+}
+document.getElementsByClassName("btn2-close")[0].onclick = function() {
+    document.getElementById('modal-edit').style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == document.getElementById('myModal')) {
+        document.getElementById('myModal').style.display = "none";
+    }
+}
+</script>
+
+<script>
+// Delete button javascript
+var del_btns = document.getElementsByClassName("btn btn-bigDelete").length;
+// Since there are multiple delete buttons..
+for(var i = 0; i < del_btns; i++) {
+    document.getElementsByClassName("btn btn-bigDelete")[i].onclick = function() {
+        document.getElementById('modal-delete').style.display = "block";
+    }    
+}
+//document.getElementsByClassName("btn btn-bigDelete")[0].onclick = function() {
+//    document.getElementById('modal-delete').style.display = "block";
+//}
+document.getElementsByClassName("btn-close")[0].onclick = function() {
+    document.getElementById('modal-delete').style.display = "none";
+}
+document.getElementsByClassName("btn2-close")[0].onclick = function() {
+    document.getElementById('modal-delete').style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == document.getElementById('myModal')) {
+        document.getElementById('myModal').style.display = "none";
+    }
+}
+</script>
 
 </body>
 </html>
