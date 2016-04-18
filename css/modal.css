@@ -90,7 +90,7 @@ p {
   content: "";
   display: none;
   background: rgba(0, 0, 0, 0.6);
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -111,7 +111,7 @@ p {
   border: #333 solid 1px;
   border-radius: 5px;
   margin-left: -200px;
-  position: fixed;
+  position: absolute;
   left: 50%;
   top: -100%;
   z-index: 11;
