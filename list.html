@@ -2,6 +2,7 @@
 <html>
 
 <head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 <title>Bookmarx</title>
 <link rel="stylesheet" type="text/css" href="css/pure-grid.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -16,7 +17,7 @@
         <div class="pure-u-1-4">
         <i class = "fa fa-star fa-2x">
             <a href="#modal-add" class="btn btn-bigAdd" id="add">
-                <img src="img/add.png" style="width:30px;height:30px;">
+                <img src="img/add.png" style="width:30px;height:30px;" alt="img/add.png">
             </a>
         </i>
     </div>
@@ -46,12 +47,12 @@
         <div class="l-box"> 
             <i class = "fa fa-star fa-2x">
                 <a href="#modal-edit" class="btn btn-bigEdit">
-                    <img src="img/Edit.png" style="width:24px;height:24px;">
+                    <img src="img/Edit.png" style="width:24px;height:24px;" alt="img/edit.png">
                 </a>
             </i>
             <i class = "fa fa-edit fa-2x">
                 <a href="#modal-delete" class="btn btn-bigDelete">
-                    <img src="img/trash.png" style="width:24px;height:24px;">
+                    <img src="img/trash.png" style="width:24px;height:24px;" alt="img/trash.png">
                 </a>
             </i>  
         </div>
@@ -71,12 +72,12 @@
         <div class="l-box"> 
             <i class = "fa fa-star fa-2x">
                 <a href="#modal-edit" class="btn btn-bigEdit">
-                    <img src="img/Edit.png" style="width:24px;height:24px;">
+                    <img src="img/Edit.png" style="width:24px;height:24px;" alt="img/add.png">
                 </a>
             </i>
             <i class = "fa fa-edit fa-2x">
                 <a href="#modal-delete" class="btn btn-bigDelete">
-                    <img src="img/trash.png" style="width:24px;height:24px;">
+                    <img src="img/trash.png" style="width:24px;height:24px;" alt="img/add.png">
                 </a>
             </i>  
         </div>
@@ -97,12 +98,12 @@
         <div class="l-box"> 
             <i class = "fa fa-star fa-2x">
                 <a href="#modal-edit" class="btn btn-bigEdit">
-                    <img src="img/Edit.png" style="width:24px;height:24px;">
+                    <img src="img/Edit.png" style="width:24px;height:24px;" alt="img/add.png">
                 </a>
             </i>
             <i class = "fa fa-edit fa-2x">
                 <a href="#modal-delete" class="btn btn-bigDelete">
-                    <img src="img/trash.png" style="width:24px;height:24px;">
+                    <img src="img/trash.png" style="width:24px;height:24px;" alt="img/add.png">
                 </a>
             </i>  
         </div>
@@ -124,12 +125,12 @@
         <div class="l-box"> 
             <i class = "fa fa-star fa-2x">
                 <a href="#modal-edit" class="btn btn-bigEdit">
-                    <img src="img/Edit.png" style="width:24px;height:24px;">
+                    <img src="img/Edit.png" style="width:24px;height:24px;" alt="img/add.png">
                 </a>
             </i>
             <i class = "fa fa-edit fa-2x">
                 <a href="#modal-delete" class="btn btn-bigDelete">
-                    <img src="img/trash.png" style="width:24px;height:24px;">
+                    <img src="img/trash.png" style="width:24px;height:24px;" alt="img/add.png">
                 </a>
             </i>  
         </div>
@@ -149,7 +150,6 @@
     <div class="modal-footer">
       <a href="" class="btn2-close">Done</a>  <!--CHANGED TO "#close"-->
     </div>
-    </div>
   </div>
 </div>
 <!-- /Modal ADD -->
@@ -167,7 +167,6 @@
     <div class="modal-footer">
       <a href="" class="btn2-close">Done</a>  <!--CHANGED TO "#close"-->
     </div>
-    </div>
   </div>
 </div>
 <!-- /Modal EDIT -->
@@ -184,7 +183,6 @@
     </div>
     <div class="modal-footer">
       <a href="" class="btn2-close">Okay!</a>  <!--CHANGED TO "#close"-->
-    </div>
     </div>
   </div>
 </div>
@@ -219,9 +217,6 @@ for(var i = 0; i < edit_btns; i++) {
         document.getElementById('modal-edit').style.display = "block";
     }    
 }
-//document.getElementsByClassName("btn btn-bigEdit")[0].onclick = function() {
-//    document.getElementById('modal-edit').style.display = "block";
-//}
 document.getElementsByClassName("btn-close")[0].onclick = function() {
     document.getElementById('modal-edit').style.display = "none";
 }
@@ -245,9 +240,6 @@ for(var i = 0; i < del_btns; i++) {
         document.getElementById('modal-delete').style.display = "block";
     }    
 }
-//document.getElementsByClassName("btn btn-bigDelete")[0].onclick = function() {
-//    document.getElementById('modal-delete').style.display = "block";
-//}
 document.getElementsByClassName("btn-close")[0].onclick = function() {
     document.getElementById('modal-delete').style.display = "none";
 }
