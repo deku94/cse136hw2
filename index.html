@@ -2,33 +2,57 @@
 <html>
 <head>
 <title>Page Title</title>
-<link rel="stylesheet" type="text/css" href="css/pure-grid.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<style type="text/css">
+body{
+    background: url("img/bg.jpg") no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+</style>
 </head>
 <body>
-<div class="pure-g">
-    <div class="pure-u-1"><p>Header Goes Here</p></div>
+<div style = "margin-top:18%; text-align:center">
+    <p class="bookmarx-main" style="margin-bottom:0px">BookMarx</p>
+    <p class="bookmarx" style="margin-top:0px; color:white">your favorite sites in one place</p>
+    <a id = "myBtn" class = "signup-button" style = "text-align:center; margin-right:3px ">Get Started</a>
+
 </div>
-<div class="pure-g">
-    <div class="pure-u-1-4"><div class="l-box"> Title </div></div>
-    <div class="pure-u-1-4"><div class="l-box"> Status </div></div>
-    <div class="pure-u-1-4"><div class="l-box"> Date Added </div></div>
-    <div class="pure-u-1-4"><div class="l-box"> Controls </div></div>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <p class="close">x</p>
+    <form role="form" action="list.html" novalidate>
+  <label for="inpEmail">Email</label>
+  <br>
+  <input type="email" id="inpEmail" placeholder="Email">
+  <br>
+  <label for="inpEmail">Password</label>
+  <br>
+  <input type="password" id="inpEmail" placeholder="Password">
+  <input type="submit" class = "login" value="Login">
+   <p style ="text-align:center">-Don't have an account? <br> Sign up with the credentials above!-</p>
+  <input class = "signup" type="submit" value="Sign Up">
+</form>
+
+
 </div>
-<hr>
-<div class="pure-g">
-    <div class="pure-u-1-4"><div class="l-box"> Reddit </div></div>
-    <div class="pure-u-1-4"><div class="l-box active-link"> Active </div></div>
-    <div class="pure-u-1-4"><div class="l-box"> May 1st, 1994 </div></div>
-    <div class="pure-u-1-4"><div class="l-box"> <i class = "fa fa-star fa-2x"></i><i class = "fa fa-edit fa-2x"></i> <i class = "fa fa-trash fa-2x"></i> </div></div>
-</div>
-<div class="pure-g">
-    <div class="pure-u-1-4"><div class="l-box"> <i class = "fa fa-folder"></i> MySpace </div></div>
-    <div class="pure-u-1-4"><div class="l-box inactive-link"> Inactive </div></div>
-    <div class="pure-u-1-4"><div class="l-box"> Feb 22, 1882 </div></div>
-    <div class="pure-u-1-4"><div class="l-box"> ... </div></div>
-</div>
+<script>
+document.getElementById("myBtn").onclick = function() {
+    document.getElementById('myModal').style.display = "block";
+}
+document.getElementsByClassName("close")[0].onclick = function() {
+    document.getElementById('myModal').style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == document.getElementById('myModal')) {
+        document.getElementById('myModal').style.display = "none";
+    }
+}
+</script>
 
 </body>
 </html>
