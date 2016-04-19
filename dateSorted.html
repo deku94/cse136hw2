@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/modal.css">
 <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,18 +17,19 @@
     <div class="logo2"><h2 class="bookmarx">BookMarx</h2></div>
 </div>
 
-<div class="pure-g">
-  <div class="pure-u-1">
-    <form class="test">
-      <input type="text" class="search-input">
-      <button type="submit" class="search-button">Search</button>
+  <form class="test">
+    <input type="text" class="search-input">
+    <button type="submit" class="search-button">Search</button>
       <a href="#modal-add" class="btn btn-bigAdd" id="add">
           <i class = "fa fa-star fa-2x"></i>
       </a>
-    </form>
-
-  </div>
-
+      <a href="#modal-import" class="btn btn-bigAdd" id="import">
+          <i class = "fa fa-download fa-2x"></i>
+      </a>
+      <a href="#modal-export" class="btn btn-bigAdd" id="export">
+          <i class = "fa fa-external-link fa-2x"></i>
+      </a>
+  </form>
 </div>
 
 <div class="pure-g text-center list-header">
@@ -148,6 +149,42 @@
 </div>
 <!-- /Modal ADD -->
 
+<!-- Modal IMPORT -->
+<div class="modal" id="modal-import" aria-hidden="true" style="position: absolute;">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <h2>Import Bookmark!</h2>
+      <a href="" class="btn-close" aria-hidden="true">X</a> <!--CHANGED TO "#close"-->
+    </div>
+    <div class="modal-body">
+      <button type="button">Select From</button>
+    </div>
+    <div class="modal-footer">
+      <a href="" class="btn2-close">Done</a>  <!--CHANGED TO "#close"-->
+    </div>
+  </div>
+</div>
+<!-- /Modal IMPORT -->
+
+<!-- Modal EXPORT -->
+<div class="modal" id="modal-export" aria-hidden="true" style="position: absolute;">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <h2>Export Bookmark!</h2>
+      <a href="" class="btn-close" aria-hidden="true">X</a> <!--CHANGED TO "#close"-->
+    </div>
+    <div class="modal-body">
+      <button type="button">Select From</button>
+
+      <button type= "button">Choose File</button>
+    </div>
+    <div class="modal-footer">
+      <a href="" class="btn2-close">Done</a>  <!--CHANGED TO "#close"-->
+    </div>
+  </div>
+</div>
+<!-- /Modal EXPORT -->
+
 <!-- Modal EDIT -->
 <div class="modal" id="modal-edit" aria-hidden="true" style="position: absolute;">
   <div class="modal-dialog">
@@ -196,6 +233,30 @@ document.getElementsByClassName("btn-close")[0].onclick = function() {
 }
 document.getElementsByClassName("btn2-close")[0].onclick = function() {
     document.getElementById('modal-add').style.display = "none";
+}
+
+// Import button 
+document.getElementById("import").onclick = function() {
+    document.getElementById('modal-import').style.display = "block";
+}
+
+document.getElementsByClassName("btn-close")[0].onclick = function() {
+    document.getElementById('modal-import').style.display = "none";
+}
+document.getElementsByClassName("btn2-close")[0].onclick = function() {
+    document.getElementById('modal-import').style.display = "none";
+}
+
+// Export button
+document.getElementById("export").onclick = function() {
+    document.getElementById('modal-export').style.display = "block";
+}
+
+document.getElementsByClassName("btn-close")[0].onclick = function() {
+    document.getElementById('modal-export').style.display = "none";
+}
+document.getElementsByClassName("btn2-close")[0].onclick = function() {
+    document.getElementById('modal-export').style.display = "none";
 }
 
 window.onclick = function(event) {
