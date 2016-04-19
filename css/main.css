@@ -30,6 +30,27 @@
   color: white;
 }
 
+.logo{
+  color:white;
+  padding:-200px;
+  float:none; 
+  display:inline;
+  text-align: center;
+  margin-left:20px;
+  margin-top:10px;
+}
+
+.logo2{
+  letter-spacing: normal;
+  word-spacing: normal;
+  float:center; 
+  display:inline;
+  text-align:center;
+  margin-left:20px;
+  margin-top:-5px;
+  margin-bottom:0px;
+}
+
 .test{
   display: block;
    transition: all 0.3s ease-out;
@@ -175,6 +196,32 @@ input[type=email], input[type=password]{
 .text-center {
   text-align: center;
 }
+.add-input {
+  padding: .5em .6em;
+  margin-right: .3em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  vertical-align: middle;
+  width:90%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.edit-input {
+  padding: .5em .6em;
+  margin-right: .3em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  vertical-align: middle;
+  width:90%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .search-input {
   padding: .5em .6em;
   margin-right: .3em;
@@ -204,6 +251,9 @@ input[type=email], input[type=password]{
   background-color: #eee;
 }
 .header {
-  background-color: #428bca;
+  background-color: #345363;
   margin-bottom: 40px;
+  /*position:fixed;
+  width:100%; idea for later*/
 }
+

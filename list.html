@@ -13,7 +13,8 @@
 
 <body>
 <div class="pure-g header">
-    <div class="pure-u-1"><h2 class="bookmarx">BookMarx</h2></div>
+    <img src="img/bookmarx.png" alt="img/bookmarx.png" height="75" witdh="75" class="logo">
+    <div class="logo2"><h2 class="bookmarx">BookMarx</h2></div>
 </div>
 
 <div class="pure-g">
@@ -132,14 +133,16 @@
 <div class="modal" id="modal-add" aria-hidden="true" style="position: absolute;">
   <div class="modal-dialog">
     <div class="modal-header">
-      <h2>Add a Bookmark!</h2>
-      <a href="" class="btn-close" aria-hidden="true">X</a> <!--CHANGED TO "#close"-->
+        <h2>Add a Bookmark!</h2>
+        <a href="" class="btn-close" aria-hidden="true">X</a>
     </div>
     <div class="modal-body">
-      <p>Enter the URL</p>
+        <p>Enter the URL</p>
+        <input type="text" class="add-input">
     </div>
     <div class="modal-footer">
-      <a href="" class="btn2-close">Done</a>  <!--CHANGED TO "#close"-->
+        <a href="" class="btn2-close" style="background: #D81515;">Cancel</a>
+        <a href="" class="btn2-close">Done</a>
     </div>
   </div>
 </div>
@@ -149,14 +152,16 @@
 <div class="modal" id="modal-edit" aria-hidden="true" style="position: absolute;">
   <div class="modal-dialog">
     <div class="modal-header">
-      <h2>Edit this Bookmark</h2>
-      <a href="" class="btn-close" aria-hidden="true">X</a> <!--CHANGED TO "#close"-->
+        <h2>Edit this Bookmark</h2>
+        <a href="" class="btn-close" aria-hidden="true">X</a>
     </div>
     <div class="modal-body">
-      <p>New Title?</p>
+        <p>New Title?</p>
+        <input type="text" class="edit-input">
     </div>
     <div class="modal-footer">
-      <a href="" class="btn2-close">Done</a>  <!--CHANGED TO "#close"-->
+        <a href="" class="btn2-close" style="background: #D81515;">Cancel</a>
+        <a href="" class="btn2-close">Done</a>
     </div>
   </div>
 </div>
@@ -173,7 +178,8 @@
       <p>Are you sure?</p>
     </div>
     <div class="modal-footer">
-      <a href="" class="btn2-close">Okay!</a>  <!--CHANGED TO "#close"-->
+        <a href="" class="btn2-close" style="background: #D81515;">No</a>
+        <a href="" class="btn2-close">Yes!</a>
     </div>
   </div>
 </div>

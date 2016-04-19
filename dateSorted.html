@@ -1,119 +1,131 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 <title>Bookmarx</title>
 <link rel="stylesheet" type="text/css" href="css/pure-grid.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
-<link rel="stylesheet" type="text/css" href="css/modal.css" />
+<link rel="stylesheet" type="text/css" href="css/modal.css">
 <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet">
 </head>
+
 <body>
-<div class="pure-g">
-    <div class="pure-u-1"><p class="bookmarx">BookMarx</p></div>
-        <div class="pure-u-1-4">
-        <i class = "fa fa-star fa-2x">
-            <a href="#modal-add" class="btn btn-bigAdd" id="add">
-                <img src="img/add.png" style="width:30px;height:30px;" alt="img/add.png">
-            </a>
-        </i>
-    </div>
+<div class="pure-g header">
+    <img src="img/bookmarx.png" alt="img/bookmarx.png" height="75" witdh="75" class="logo">
+    <div class="logo2"><h2 class="bookmarx">BookMarx</h2></div>
 </div>
 
 <div class="pure-g">
-  <form class="test">
-    <input type="text" class="pure-input-rounded">
-    <button type="submit" class="pure-button">Search</button>
-  </form>
-</div>
-<br>
+  <div class="pure-u-1">
+    <form class="test">
+      <input type="text" class="search-input">
+      <button type="submit" class="search-button">Search</button>
+      <a href="#modal-add" class="btn btn-bigAdd" id="add">
+          <i class = "fa fa-star fa-2x"></i>
+      </a>
+    </form>
 
-<div class="pure-g">
-    <div class="pure-u-1-4"><div class="l-box"> Title </div></div>
-    <div class="pure-u-1-4"><div class="l-box"> Status </div></div>
+  </div>
+
+</div>
+
+<div class="pure-g text-center list-header">
+    <div class="pure-u-1-4"><div class="l-box"><h4> Title </h4></div></div>
+    <div class="pure-u-1-4"><div class="l-box"><h4> Status </h4></div></div>
     <div class="pure-u-1-4">
         <div class="l-box">
-            <a href = "list.html" style = "text-decoration:none; color: black">Date Added <i class = "fa fa-caret-up i-box" ></i></a>
+            <h4><a href = "dateSorted.html" style = "text-decoration:none; color: black">Date Added <i class = "fa fa-caret-down i-box" ></i></a></h4>
         </div>
     </div>
-    <div class="pure-u-1-4"><div class="l-box"> Controls </div></div>
+    <div class="pure-u-1-4"><div class="l-box"><h4> Controls </h4></div></div>
 </div>
-<hr>
-<div class="pure-g row">
-    <div class="pure-u-1-4"><div class="l-box"> <i class = "fa fa-folder"></i> Geocities </div></div>
-    <div class="pure-u-1-4"><div class="l-box"> Folder </div></div>
-    <div class="pure-u-1-4"><div class="l-box"> Dec 23, 1994 </div></div>
+<div class="pure-g row text-center">
     <div class="pure-u-1-4">
-        <div class="l-box"> 
-            <i class = "fa fa-star fa-2x">
-                <a href="#modal-edit" class="btn btn-bigEdit">
-                    <img src="img/Edit.png" style="width:24px;height:24px;" alt="img/edit.png">
-                </a>
-            </i>
-            <i class = "fa fa-edit fa-2x">
-                <a href="#modal-delete" class="btn btn-bigDelete">
-                    <img src="img/trash.png" style="width:24px;height:24px;" alt="img/trash.png">
-                </a>
-            </i>  
+        <div class="l-box">
+            <i class = "fa fa-folder"></i> Geocities
+        </div>
+    </div>
+    <div class="pure-u-1-4">
+        <div class="l-box"> Folder </div>
+    </div>
+    <div class="pure-u-1-4">
+        <div class="l-box"> Dec 23, 1994 </div>
+    </div>
+    <div class="pure-u-1-4">
+      <div class="l-box">
+          <a href="#modal-edit" class="btn btn-bigEdit">
+              <i class = "fa fa-edit fa-2x"></i>
+          </a>
+          <a href="#modal-delete" class="btn btn-bigDelete">
+              <i class = "fa fa-trash fa-2x"></i>
+          </a>
+      </div>
+    </div>
+</div>
+<div class="pure-g row text-center">
+    <div class="pure-u-1-4">
+        <div class="l-box">
+            <i class = "fa fa-folder"></i> Don't Open </div>
+        </div>
+    <div class="pure-u-1-4">
+        <div class="l-box"> Folder </div>
+    </div>
+    <div class="pure-u-1-4">
+        <div class="l-box"> Feb 22, 1996 </div>
+    </div>
+    <div class="pure-u-1-4">
+      <div class="l-box">
+          <a href="#modal-edit" class="btn btn-bigEdit">
+              <i class = "fa fa-edit fa-2x"></i>
+          </a>
+          <a href="#modal-delete" class="btn btn-bigDelete">
+              <i class = "fa fa-trash fa-2x"></i>
+          </a>
+      </div>
+    </div>
+</div>
+<div class="pure-g row text-center">
+    <div class="pure-u-1-4">
+        <div class="l-box"> MySpace </div>
+    </div>
+    <div class="pure-u-1-4">
+        <div class="l-box inactive-link"> Inactive </div>
+    </div>
+    <div class="pure-u-1-4">
+        <div class="l-box"> Apr 21st, 2003 </div>
+    </div>
+    <div class="pure-u-1-4">
+        <div class="l-box">
+            <a href="#modal-edit" class="btn btn-bigEdit">
+                <i class = "fa fa-edit fa-2x"></i>
+            </a>
+            <a href="#modal-delete" class="btn btn-bigDelete">
+                <i class = "fa fa-trash fa-2x"></i>
+            </a>
         </div>
     </div>
 </div>
-<div class="pure-g row">
-    <div class="pure-u-1-4"><div class="l-box"> <i class = "fa fa-folder"></i> Don't Open </div></div>
-    <div class="pure-u-1-4"><div class="l-box"> Folder </div></div>
-    <div class="pure-u-1-4"><div class="l-box"> Feb 22, 1996 </div></div>
+<div class="pure-g row text-center">
     <div class="pure-u-1-4">
-        <div class="l-box"> 
-            <i class = "fa fa-star fa-2x">
-                <a href="#modal-edit" class="btn btn-bigEdit">
-                    <img src="img/Edit.png" style="width:24px;height:24px;" alt="img/edit.png">
-                </a>
-            </i>
-            <i class = "fa fa-edit fa-2x">
-                <a href="#modal-delete" class="btn btn-bigDelete">
-                    <img src="img/trash.png" style="width:24px;height:24px;" alt="img/trash.png">
-                </a>
-            </i>  
-        </div>
+        <div class="l-box"> Reddit </div>
     </div>
-</div>
-<div class="pure-g row">
-    <div class="pure-u-1-4"><div class="l-box"> MySpace </div></div>
-    <div class="pure-u-1-4"><div class="l-box inactive-link"> Inactive </div></div>
-    <div class="pure-u-1-4"><div class="l-box"> Apr 21st, 2003 </div></div>
     <div class="pure-u-1-4">
-        <div class="l-box"> 
-            <i class = "fa fa-star fa-2x">
-                <a href="#modal-edit" class="btn btn-bigEdit">
-                    <img src="img/Edit.png" style="width:24px;height:24px;" alt="img/edit.png">
-                </a>
-            </i>
-            <i class = "fa fa-edit fa-2x">
-                <a href="#modal-delete" class="btn btn-bigDelete">
-                    <img src="img/trash.png" style="width:24px;height:24px;" alt="img/trash.png">
-                </a>
-            </i>  
-        </div>
+        <div class="l-box active-link"> Active </div>
     </div>
-</div>
-<div class="pure-g row">
-    <div class="pure-u-1-4"><div class="l-box"> Reddit </div></div>
-    <div class="pure-u-1-4"><div class="l-box active-link"> Active </div></div>
-    <div class="pure-u-1-4"><div class="l-box"> May 1st, 2014 </div></div>
     <div class="pure-u-1-4">
-        <div class="l-box"> 
-            <i class = "fa fa-star fa-2x">
-                <a href="#modal-edit" class="btn btn-bigEdit">
-                    <img src="img/Edit.png" style="width:24px;height:24px;" alt="img/edit.png">
-                </a>
-            </i>
-            <i class = "fa fa-edit fa-2x">
-                <a href="#modal-delete" class="btn btn-bigDelete">
-                    <img src="img/trash.png" style="width:24px;height:24px;" alt="img/trash.png">
-                </a>
-            </i>  
-        </div>
+        <div class="l-box"> May 1st, 2014 </div>
+    </div>
+    <div class="pure-u-1-4">
+      <div class="l-box">
+          <a href="#modal-edit" class="btn btn-bigEdit">
+              <i class = "fa fa-edit fa-2x"></i>
+          </a>
+          <a href="#modal-delete" class="btn btn-bigDelete">
+              <i class = "fa fa-trash fa-2x"></i>
+          </a>
+      </div>
     </div>
 </div>
 
@@ -121,14 +133,16 @@
 <div class="modal" id="modal-add" aria-hidden="true" style="position: absolute;">
   <div class="modal-dialog">
     <div class="modal-header">
-      <h2>Add a Bookmark!</h2>
-      <a href="" class="btn-close" aria-hidden="true">X</a> <!--CHANGED TO "#close"-->
+        <h2>Add a Bookmark!</h2>
+        <a href="" class="btn-close" aria-hidden="true">X</a>
     </div>
     <div class="modal-body">
-      <p>Enter the URL</p>
+        <p>Enter the URL</p>
+        <input type="text" class="add-input">
     </div>
     <div class="modal-footer">
-      <a href="" class="btn2-close">Done</a>  <!--CHANGED TO "#close"-->
+        <a href="" class="btn2-close" style="background: #D81515;">Cancel</a>
+        <a href="" class="btn2-close">Done</a>
     </div>
   </div>
 </div>
@@ -138,14 +152,16 @@
 <div class="modal" id="modal-edit" aria-hidden="true" style="position: absolute;">
   <div class="modal-dialog">
     <div class="modal-header">
-      <h2>Edit this Bookmark</h2>
-      <a href="" class="btn-close" aria-hidden="true">X</a> <!--CHANGED TO "#close"-->
+        <h2>Edit this Bookmark</h2>
+        <a href="" class="btn-close" aria-hidden="true">X</a>
     </div>
     <div class="modal-body">
-      <p>New Title?</p>
+        <p>New Title?</p>
+        <input type="text" class="edit-input">
     </div>
     <div class="modal-footer">
-      <a href="" class="btn2-close">Done</a>  <!--CHANGED TO "#close"-->
+        <a href="" class="btn2-close" style="background: #D81515;">Cancel</a>
+        <a href="" class="btn2-close">Done</a>
     </div>
   </div>
 </div>
@@ -162,7 +178,8 @@
       <p>Are you sure?</p>
     </div>
     <div class="modal-footer">
-      <a href="" class="btn2-close">Okay!</a>  <!--CHANGED TO "#close"-->
+        <a href="" class="btn2-close" style="background: #D81515;">No</a>
+        <a href="" class="btn2-close">Yes!</a>
     </div>
   </div>
 </div>
@@ -195,7 +212,7 @@ var edit_btns = document.getElementsByClassName("btn btn-bigEdit").length;
 for(var i = 0; i < edit_btns; i++) {
     document.getElementsByClassName("btn btn-bigEdit")[i].onclick = function() {
         document.getElementById('modal-edit').style.display = "block";
-    }    
+    }
 }
 document.getElementsByClassName("btn-close")[0].onclick = function() {
     document.getElementById('modal-edit').style.display = "none";
@@ -218,7 +235,7 @@ var del_btns = document.getElementsByClassName("btn btn-bigDelete").length;
 for(var i = 0; i < del_btns; i++) {
     document.getElementsByClassName("btn btn-bigDelete")[i].onclick = function() {
         document.getElementById('modal-delete').style.display = "block";
-    }    
+    }
 }
 document.getElementsByClassName("btn-close")[0].onclick = function() {
     document.getElementById('modal-delete').style.display = "none";
